@@ -32,4 +32,40 @@ body {
 	color: $pure-white;
 	@include heroImages('../img/3.jpg');
 	background-attachment: scroll;
+
+	.hamburger {
+		position: absolute;
+		top: 1em;
+		right: 1em;
+		font-size: 24px;
+
+		z-index: 500;
+	}
+
+	.nav {
+		&-mobile {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			background-color: $pure-white;
+			transform: translateX(-102%);
+			transition: transform 0.3s;
+
+			z-index: 10;
+
+			&--active {
+				transform: translateX(0);
+			}
+		}
+
+		&-desktop {
+			display: none;
+		}
+	}
 }

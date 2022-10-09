@@ -54,4 +54,32 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-attachment: scroll;
+}
+.header .hamburger {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: 24px;
+  z-index: 500;
+}
+.header .nav-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  transform: translateX(-102%);
+  transition: transform 0.3s;
+  z-index: 10;
+}
+.header .nav-mobile--active {
+  transform: translateX(0);
+}
+.header .nav-desktop {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
