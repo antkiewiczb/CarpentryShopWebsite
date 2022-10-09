@@ -1,6 +1,6 @@
-@use 'colors' as *;
-@use 'components' as *;
-@use 'mixins' as *;
+@use './colors' as *;
+@use './components' as *;
+@use './mixins' as *;
 
 *,
 *::before,
@@ -27,23 +27,9 @@ body {
 	align-items: center;
 	flex-direction: column;
 	padding: 2em;
-	height: 100vh;
-	@include heroImages('../img/278501636_289961099983859_849017173262262485_n.jpg');
-
-	&__block {
-		position: absolute;
-		right: 100px;
-		width: 30%;
-		height: 80%;
-		background-color: black;
-		border-radius: 8px;
-		filter: blur(8);
-
-		&::before {
-			left: 300px;
-			width: 500px;
-			height: 10px;
-			background-color: white;
-		}
-	}
+	height: 85vh;
+	text-align: center;
+	color: $pure-white;
+	@include heroImages('../img/3.jpg');
+	background-attachment: scroll;
 }
