@@ -1,8 +1,10 @@
 @use 'colors' as *;
+@use 'animations' as *;
 
 @mixin heroImages($bgImg) {
 	background-image: $light-black-gradient, url($bgImg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+	animation: zoomImg 3s;
 }

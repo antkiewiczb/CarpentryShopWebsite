@@ -1,5 +1,5 @@
 const navMobile = document.querySelector('.nav-mobile');
-const navBtn = document.querySelector('.hamburger');
+const navBtn = document.querySelector('.header__hamburger_btn');
 // const footerYear = document.querySelector('.footer__year');
 
 const handleNav = () => {
