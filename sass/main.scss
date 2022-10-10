@@ -18,7 +18,6 @@ html {
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.6rem;
-	overflow: hidden;
 }
 
 //Header
@@ -33,7 +32,7 @@ body {
 		height: 85vh;
 		text-align: center;
 		color: $pure-white;
-		@include heroImages('../img/3.jpg');
+		@include heroImages('../img/heading-small.jpg');
 		background-attachment: scroll;
 	}
 	&__heading {
@@ -41,7 +40,7 @@ body {
 		font-size: 2.8rem;
 		font-weight: 400;
 		padding: 0.5em;
-		color: #eec88b;
+		color: $main-color;
 		text-transform: uppercase;
 		text-align: center;
 	}
@@ -51,7 +50,7 @@ body {
 		top: 0.5em;
 		right: 0.5em;
 		font-size: 24px;
-		color: #eec88b;
+		color: $main-color;
 		z-index: 500;
 		padding: 10px;
 	}
@@ -89,6 +88,27 @@ body {
 		}
 	}
 }
+// section about
+.about {
+	&__box {
+		display: flex;
+		flex-direction: column;
+		margin: 2em 0;
+	}
+	&__img {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		margin-bottom: 1em;
+		border-radius: 8px;
+	}
+	title {
+		margin-bottom: 0.5em;
+	}
+	&__text {
+		font-size: 1.4rem;
+	}
+}
 
 // Media
 @media (min-width: 375px) {
@@ -116,6 +136,31 @@ body {
 		}
 	}
 }
+@media (min-width: 576px) {
+	.about {
+		&__box {
+			flex-direction: row;
+			justify-content: space-between;
+
+			&-text {
+				width: 55%;
+				&--right {
+					text-align: right;
+				}
+			}
+			&-img {
+				width: 40%;
+				&--right {
+					order: 1;
+				}
+			}
+		}
+		&__img {
+			margin-bottom: 0;
+			max-height: 300px;
+		}
+	}
+}
 @media (min-width: 768px) {
 	.header {
 		&__heading {
@@ -132,8 +177,29 @@ body {
 		}
 	}
 }
+@media (min-width: 992px) {
+	.about {
+		&__box {
+			margin: 5em 0;
+
+			&-text {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				margin-bottom: 2.5em;
+			}
+		}
+		&__title {
+			font-size: 3rem;
+		}
+		&__text {
+			font-size: 2.2rem;
+		}
+	}
+}
 @media (min-width: 1024px) {
 	.header {
+		@include heroImages('../img/heading-big.jpg');
 		&__logo {
 			top: -2em;
 			left: -3.5em;

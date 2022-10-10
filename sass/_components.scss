@@ -25,3 +25,34 @@
 		transform: skew(45deg);
 	}
 }
+.section-heading {
+	position: relative;
+	margin-bottom: 2em;
+	font-size: 4rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	color: $dark;
+	letter-spacing: 2px;
+	text-decoration: underline $main-color;
+	text-underline-offset: 0.4em;
+}
+.section-padding {
+	padding: 6em 2em;
+}
+@media (min-width: 768px) {
+	.section-heading {
+		font-size: 3.6rem;
+	}
+	.section-padding {
+		padding: 8em 2em;
+	}
+}
+@media (min-width: 992px) {
+	.section-heading {
+		font-size: 4.8rem;
+	}
+	.section-padding {
+		padding: 10em 2em;
+	}
+}

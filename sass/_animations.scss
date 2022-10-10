@@ -1,12 +1,21 @@
 @keyframes zoomImg {
 	from {
-		transform: scale(1.3);
-		transition-duration: 5s;
-		margin: 0 auto;
-		display: block;
+		transform: scale(1.2);
+		transition-duration: 1s;
 	}
 	to {
 		transform: scale(1);
-		z-index: 0;
 	}
+
+	// 50% {
+	// 	transform: scale(1.2);
+	// 	transition-duration: 2s;
+	// }
+	// 75% {
+	// 	transform: scale(1.1);
+	// 	transition-duration: 1s;
+	// }
+	// 100% {
+	// 	transform: scale(1);
+	// }
 }
