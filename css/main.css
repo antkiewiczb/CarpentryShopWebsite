@@ -35,6 +35,9 @@
           text-decoration: underline #eec88b;
   text-underline-offset: 0.4em;
 }
+.section-heading-black {
+  color: white;
+}
 
 .section-padding {
   padding: 6em 2em;
@@ -54,24 +57,6 @@
   }
   .section-padding {
     padding: 10em 2em;
-  }
-}
-@-webkit-keyframes zoomImg {
-  from {
-    transform: scale(1.2);
-    transition-duration: 1s;
-  }
-  to {
-    transform: scale(1);
-  }
-}
-@keyframes zoomImg {
-  from {
-    transform: scale(1.2);
-    transition-duration: 1s;
-  }
-  to {
-    transform: scale(1);
   }
 }
 *,
@@ -175,7 +160,69 @@ body {
 .about__text {
   font-size: 1.4rem;
 }
+.about__cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.about__card {
+  margin: 1em;
+  width: 45%;
+}
+.about__card i {
+  font-size: 48px;
+  padding: 0.2em;
+}
+.about__card p {
+  padding: 0.3em;
+  font-size: 24px;
+}
 
+.gallery {
+  position: relative;
+  padding: 10em 2em;
+  background-image: linear-gradient(100deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/PS-Colour-Black_31R41tz.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-animation: zoomImg 3s;
+          animation: zoomImg 3s;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+.gallery__images {
+  display: flex;
+  justify-content: center;
+  justify-items: flex-start;
+  flex-flow: row wrap;
+  text-align: center;
+}
+.gallery__images img {
+  width: 120px;
+  height: 120px;
+  margin: 5px;
+}
+
+@media (min-width: 320px) {
+  .about h2 {
+    font-size: 32px;
+  }
+  .about__card p {
+    padding: 0.2em;
+    font-size: 18px;
+  }
+  .gallery h2 {
+    font-size: 32px;
+  }
+  .gallery img {
+    width: 110px;
+    height: 100px;
+    margin: 8px;
+  }
+}
 @media (min-width: 375px) {
   .header__heading {
     font-size: 4rem;
@@ -195,6 +242,21 @@ body {
   .header__logo {
     left: -1.5em;
     width: 200px;
+  }
+  .about h2 {
+    font-size: 42px;
+  }
+  .about__card p {
+    padding: 0.2em;
+    font-size: 18px;
+  }
+  .gallery h2 {
+    font-size: 42px;
+  }
+  .gallery img {
+    width: 150px;
+    height: 110px;
+    margin: 5px;
   }
 }
 @media (min-width: 576px) {
@@ -231,6 +293,21 @@ body {
     top: -1.5em;
     left: -3.5em;
     width: 350px;
+  }
+  .about h2 {
+    font-size: 48px;
+  }
+  .about__card p {
+    padding: 0.2em;
+    font-size: 24px;
+  }
+  .gallery h2 {
+    font-size: 48px;
+  }
+  .gallery img {
+    width: 300px;
+    height: 200px;
+    margin: 5px;
   }
 }
 @media (min-width: 992px) {
@@ -289,5 +366,22 @@ body {
   }
   .header .nav__link:hover {
     color: #fff;
+  }
+}
+@media (min-width: 1200px) {
+  .about h2 {
+    font-size: 60px;
+  }
+  .about__card p {
+    padding: 0.2em;
+    font-size: 32px;
+  }
+  .gallery h2 {
+    font-size: 60px;
+  }
+  .gallery img {
+    width: 450px;
+    height: 300px;
+    margin: 5px;
   }
 }/*# sourceMappingURL=main.css.map */

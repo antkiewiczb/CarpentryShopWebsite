@@ -36,6 +36,11 @@
 	letter-spacing: 2px;
 	text-decoration: underline $main-color;
 	text-underline-offset: 0.4em;
+
+	&-black {
+		color: white;
+		// text-decoration: underline white;
+	}
 }
 .section-padding {
 	padding: 6em 2em;
