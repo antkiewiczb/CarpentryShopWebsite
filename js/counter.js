@@ -2,7 +2,7 @@ const counterItems = document.querySelectorAll('.counter');
 const counterBox = document.querySelector('.about__cards');
 
 const options = {
-	rootMargin: '-250px',
+	rootMargin: '-350px',
 };
 
 const startCounter = (entry) => {
@@ -31,3 +31,5 @@ const startCounter = (entry) => {
 
 const observer = new IntersectionObserver(startCounter, options);
 observer.observe(counterBox);
+
+AOS.init();

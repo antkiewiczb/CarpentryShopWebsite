@@ -134,7 +134,8 @@ body {
 .gallery {
 	position: relative;
 	padding: 10em 2em;
-	@include heroImages('../img/PS-Colour-Black_31R41tz.jpg');
+	// @include heroImages('../img/PS-Colour-Black_31R41tz.jpg');
+	background-color: black;
 	text-align: center;
 	color: $pure-white;
 	overflow: hidden;
@@ -154,6 +155,57 @@ body {
 			// height: 500px;
 			// margin: 5px;
 		}
+	}
+}
+
+//Contact
+.contact {
+	position: relative;
+	overflow: hidden;
+	.white-block-left {
+		background-color: black;
+	}
+
+	&__box {
+		text-align: center;
+
+		h3 {
+			font-size: 26px;
+			padding-bottom: 0.5em;
+		}
+		i {
+			font-size: 18px;
+		}
+		p {
+			padding-bottom: 0.6em;
+			font-size: 18px;
+		}
+
+		&-map {
+			iframe {
+				display: none;
+			}
+		}
+	}
+}
+
+.footer {
+	background: black;
+
+	&__social {
+		text-align: center;
+		padding-top: 1em;
+		&-link {
+			font-size: 32px;
+			padding-left: 0.5em;
+			color: white;
+		}
+	}
+	&__bottom-text {
+		padding-top: 0.5em;
+		text-align: center;
+		color: white;
+		font-size: 18px;
 	}
 }
 @media (min-width: 320px) {
@@ -192,6 +244,19 @@ body {
 		&__logo {
 			left: -1.5em;
 			width: 175px;
+		}
+	}
+	.contact__box {
+		text-align: center;
+
+		h3 {
+			font-size: 30px;
+		}
+		i {
+			font-size: 22px;
+		}
+		p {
+			font-size: 22px;
 		}
 	}
 }
@@ -289,6 +354,29 @@ body {
 			margin: 5px;
 		}
 	}
+	.contact__box {
+		display: flex;
+		justify-content: space-around;
+		h3 {
+			font-size: 36px;
+			padding-bottom: 0.5em;
+		}
+		i {
+			font-size: 28px;
+		}
+		p {
+			padding-bottom: 1em;
+			font-size: 28px;
+		}
+
+		&-map {
+			iframe {
+				display: flex;
+				width: 300px;
+				height: 300px;
+			}
+		}
+	}
 }
 @media (min-width: 992px) {
 	.about {
@@ -343,6 +431,40 @@ body {
 				&:hover {
 					color: $pure-white;
 				}
+			}
+		}
+	}
+	.footer {
+		&__social {
+			&-link {
+				font-size: 48px;
+				color: white;
+			}
+		}
+		&__bottom-text {
+			padding-top: 0.5em;
+			text-align: center;
+			color: white;
+			font-size: 22px;
+		}
+	}
+
+	.contact__box {
+		h3 {
+			font-size: 36px;
+			padding-bottom: 0.5em;
+		}
+		i {
+			font-size: 32px;
+		}
+		p {
+			padding-bottom: 1em;
+			font-size: 32px;
+		}
+		&-map {
+			iframe {
+				width: 500px;
+				height: 500px;
 			}
 		}
 	}
