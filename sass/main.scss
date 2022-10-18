@@ -73,10 +73,18 @@ body {
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
-			background-color: $pure-white;
+			background-color: $dark;
 			transform: translateX(-101%);
 			transition: transform 0.3s;
 			z-index: 10;
+
+			.nav__link {
+				text-decoration: none;
+				font-size: 34px;
+				padding: 0.3em;
+				color: white;
+				text-transform: uppercase;
+			}
 
 			&--active {
 				transform: translateX(0);
@@ -134,7 +142,6 @@ body {
 .gallery {
 	position: relative;
 	padding: 10em 2em;
-	// @include heroImages('../img/PS-Colour-Black_31R41tz.jpg');
 	background-color: black;
 	text-align: center;
 	color: $pure-white;
@@ -151,9 +158,6 @@ body {
 			width: 120px;
 			height: 120px;
 			margin: 5px;
-			// width: 500px;
-			// height: 500px;
-			// margin: 5px;
 		}
 	}
 }
